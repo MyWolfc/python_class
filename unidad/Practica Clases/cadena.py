@@ -1,0 +1,8 @@
+Nombredelproducto = str(input("Ingrese el nombre del producto: "))
+Precio = float(input("Ingrese el precio unitario: "))
+Unidades = int(input("Ingrese las unidades: "))
+print(f"Nombre del producto: {Nombredelproducto} \nPrecio: {str(round(Precio,2)).zfill(10)} \nUnidades: {str(Unidades).zfill(3)} \nCoste total: {str(round(Precio*Unidades,2)).zfill(11)}" )
+producto = input('Introduce el nombre del producto: ')
+precio = float(input('Introducde el precio unitario: '))
+unidades = int(input('Introduce el número de unidades: '))
+print('{producto}: {unidades:3d} unidades x {precio:6.2f} = {total:8.2f}'.format(producto = producto, unidades = unidades, precio = precio, total = unidades * precio))
