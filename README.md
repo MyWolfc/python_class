@@ -1,2 +1,3 @@
 # python_class
-repositorio epico
+#repositorio epico
+#profe pasenos por favor UwU
