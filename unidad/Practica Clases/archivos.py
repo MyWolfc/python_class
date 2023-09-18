@@ -2,17 +2,49 @@ import csv
 from operator import itemgetter
 def OrdenarNom(rarete):
     diccionario_ordenado = sorted(rarete, key=itemgetter("Nombre"))
+    nombre_archivo ="OrdenadoNombre.csv"
+
+    with open(nombre_archivo, mode='w', newline='') as archivo_csv:
+        campos = ["Numero de control","Nombre","Calificacion"]
+        escritor_csv = csv.DictWriter(archivo_csv, fieldnames=campos)
+
+        escritor_csv.writeheader()
+        # Escribir los datos en el archivo
+        for fila in diccionario_ordenado:
+            escritor_csv.writerow(fila)
+        return diccionario_ordenado
+
     return diccionario_ordenado
-    pass
+
 
 def OrdenarCalif(rarete):
     diccionario_ordenado = sorted(diccionario, key=lambda x: x["Calificacion"])
-    return diccionario_ordenado
+    nombre_archivo ="OrdenadoCalif.csv"
 
-    pass
+    with open(nombre_archivo, mode='w', newline='') as archivo_csv:
+        campos = ["Numero de control","Nombre","Calificacion"]
+        escritor_csv = csv.DictWriter(archivo_csv, fieldnames=campos)
+
+        escritor_csv.writeheader()
+        # Escribir los datos en el archivo
+        for fila in diccionario_ordenado:
+            escritor_csv.writerow(fila)
+        return diccionario_ordenado
 
 def OrdenarNum(rarete):
     diccionario_ordenado = sorted(rarete, key=itemgetter("Numero de control"))
+    nombre_archivo ="OrdenadoNum.csv"
+
+    with open(nombre_archivo, mode='w', newline='') as archivo_csv:
+        campos = ["Numero de control","Nombre","Calificacion"]
+        escritor_csv = csv.DictWriter(archivo_csv, fieldnames=campos)
+
+        escritor_csv.writeheader()
+        # Escribir los datos en el archivo
+        for fila in diccionario_ordenado:
+            escritor_csv.writerow(fila)
+        return diccionario_ordenado
+
     return diccionario_ordenado
     pass
 
