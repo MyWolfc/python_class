@@ -20,15 +20,3 @@ for x in reversed(ABorrarEpico):
     abecedarioEPICO.pop(x)
 
 print(abecedarioEPICO)
-
-# Crear una lista con el abecedario
-Abecedario = list("abcdefghijklmnñopqrstuvwxyz")
-
-# Eliminar letras en posiciones múltiplos de 2
-indices_a_eliminar = [i for i in range(len(Abecedario)) if (i + 1) % 2 == 0]
-for indice in reversed(indices_a_eliminar):
-    Abecedario.pop(indice)
-
-# Mostrar la lista resultante
-print(Abecedario)
-
