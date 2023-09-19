@@ -10,11 +10,6 @@ while True:
             print("ingrese un numero entero positivo")
     else:
         print("ingrese un numero valido entero")
-
-f_1= n1[::-1]
-f_2=n2[::-1]
-f1= 0
-f2=0
 lista1 = []
 lista2 = []
 for i in n1:
