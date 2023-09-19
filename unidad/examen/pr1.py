@@ -24,14 +24,19 @@ m = LLenado(n)
 for i in m:
     print(i)
 print("lista ordenada")
-matrizFinal=[]
+
 ordenados = sorted(filaAux)
-x=0
-for i in range(n):
-    listFinal=[]
-    for j in range(n):
-        listFinal.append(ordenados[x])
-        x+=1
-    matrizFinal.append(listFinal)
-for i in matrizFinal:
+
+def ordenar(Ordenados):
+    matrizFinal=[]
+    x=0
+    for i in range(n):
+        ListFinal=[]
+        for j in range(n):
+            ListFinal.append(Ordenados[x])
+            x+=1
+        matrizFinal.append(ListFinal)
+    return matrizFinal 
+m1 = ordenar(ordenados)
+for i in m1:
     print(i)
