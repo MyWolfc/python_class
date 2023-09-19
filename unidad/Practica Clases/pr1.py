@@ -4,7 +4,7 @@ import random
 
 listaOP = []
 for i in range(12):
-    listaOP.append(i)
+    listaOP.append(random.randint(1,100))
 
 print(listaOP,len(listaOP))
 def crear_matriz(listaepica):
@@ -21,5 +21,5 @@ def crear_matriz(listaepica):
         for j in range(aux):
             pass
     return matrizEspejo
-matrizepica = crear_matriz(listaOP)
-print(matrizepica)
+#matrizepica = crear_matriz(listaOP)
+#print(matrizepica)
